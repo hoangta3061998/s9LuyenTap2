@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var myBirth = new Date(1995,1,1,5,30,0,0);
+    let myAge = Date.now() - myBirth.getTime();
+    let dateToSecond = Math.floor(myAge/1000);
+    let dateToMinute = Math.floor(dateToSecond/60);
+    let dateToHour = Math.floor(dateToMinute/60);
+    let dateToDay = Math.floor(dateToHour/24);
+    let dateToMonth = Math.floor(dateToDay/30);
+    let dateToYear = Math.floor(dateToMonth/12);
+    document.write("Toi da song "+dateToYear+"nam" +"<br>");
+    document.write("Toi da song "+dateToMonth+"thang"+"<br>");
+    document.write("Toi da song "+dateToDay+"ngay"+"<br>");
+    document.write("Toi da song "+dateToHour+"gio"+"<br>");
+    document.write("Toi da song "+dateToMinute+"phut"+"<br>");
+    document.write("Toi da song "+dateToSecond+"giay"+"<br>");
+
+
+</script>
+</body>
+</html>

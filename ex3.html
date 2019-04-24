@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Count(str) {
+        var arr=str.split(" ");
+        this.countW = arr.length;
+        this.countA = 0;
+        for(let i = 0 ; i<str.length ; i++) {
+            if (str.charAt(i)==="a") {
+                this.countA++
+            }
+        }
+
+    }
+    function replace(str) {
+        var temp=str.replace("JavaScript","TypeScript");
+        document.write(temp);
+    }
+    var str1 = "Toi yeu JavaScript";
+    var test = new Count(str1);
+    document.write(test.countW + " - " + test.countA);
+    replace(str1);
+
+</script>
+</body>
+</html>
